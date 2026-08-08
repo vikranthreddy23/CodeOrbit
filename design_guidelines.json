@@ -1,0 +1,116 @@
+{
+  "theme": "DARK",
+  "archetype": "4 (Swiss & High-Contrast) + Terminal/Space Orbit Variant",
+  "typography": {
+    "fonts": {
+      "headings": "Unbounded, sans-serif",
+      "body": "IBM Plex Sans, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "classes": {
+      "h1": "font-black tracking-tighter text-5xl md:text-6xl lg:text-7xl leading-none",
+      "h2": "font-black tracking-tight text-3xl md:text-4xl lg:text-5xl",
+      "h3": "font-bold tracking-tight text-2xl md:text-3xl",
+      "body": "font-normal leading-relaxed text-zinc-400 text-base md:text-lg",
+      "mono_label": "font-mono tracking-[0.2em] uppercase text-xs font-semibold"
+    }
+  },
+  "colors": {
+    "background": {
+      "base": "#000000",
+      "surface": "#09090b",
+      "surface_elevated": "#18181b"
+    },
+    "text": {
+      "primary": "#ffffff",
+      "secondary": "#a1a1aa",
+      "muted": "#71717a"
+    },
+    "accents": {
+      "primary": "#4ade80",
+      "secondary": "#3b82f6",
+      "danger": "#ef4444",
+      "border": "rgba(255,255,255,0.1)"
+    }
+  },
+  "layout_spacing": {
+    "container": "max-w-7xl mx-auto px-6 md:px-12",
+    "section_py": "py-24 md:py-32",
+    "gap_grid": "gap-6 md:gap-8",
+    "radius": "rounded-none md:rounded-2xl"
+  },
+  "components": {
+    "header": {
+      "container": "fixed top-0 left-0 w-full z-50 backdrop-blur-2xl bg-black/60 border-b border-white/10",
+      "link": "text-sm font-mono tracking-wide text-zinc-400 hover:text-white transition-colors"
+    },
+    "buttons": {
+      "primary": "bg-white text-black font-bold font-mono tracking-tight px-8 py-4 rounded-none hover:bg-zinc-200 transition-colors flex items-center justify-center gap-2",
+      "secondary": "border border-white/20 bg-transparent text-white font-bold font-mono px-8 py-4 rounded-none hover:bg-white/5 transition-colors flex items-center justify-center gap-2"
+    },
+    "bento_grid": {
+      "container": "grid grid-cols-1 md:grid-cols-4 lg:grid-cols-12 gap-6",
+      "card": "bg-zinc-950 border border-white/10 p-8 hover:border-green-400/50 transition-colors relative overflow-hidden group flex flex-col justify-between"
+    },
+    "badge": "inline-flex items-center border border-white/20 bg-black text-white px-3 py-1 text-xs font-mono tracking-wider uppercase rounded-full"
+  },
+  "sections_layout": [
+    {
+      "name": "Navigation",
+      "description": "Sticky top bar. Left: 'CodeOrbit' logo in Unbounded font. Right: CTA 'Join Waitlist'. Must include data-testids."
+    },
+    {
+      "name": "Hero Section",
+      "description": "Massive terminal/orbit visual. Background image of space orbit with heavy black overlay (opacity 70%). Headline: 'Command Your Career.' Subheadline: 'DSA mentoring for the top 1%.' Font: Unbounded. Includes two CTAs."
+    },
+    {
+      "name": "Social Proof / Logo Ticker",
+      "description": "Section starting with mono label 'MENTORS FROM'. Followed by a horizontal flex/marquee of Amazon, Uber, and Adobe logos. CRITICAL: Logos must have Tailwind classes 'brightness-0 invert opacity-50' to appear white/grey."
+    },
+    {
+      "name": "Curriculum Bento",
+      "description": "Tetris bento grid detailing DSA topics (Arrays, Trees, Graphs, DP, System Design). Include a block with an image of code on a dark screen."
+    },
+    {
+      "name": "Testimonials",
+      "description": "Grid of 3 minimal cards. Avatar images of students, glowing 5-star icons, and quote text. Use monospaced font for student names/roles."
+    },
+    {
+      "name": "Stats Command Center",
+      "description": "3 large metric counters. Number in huge Acid Green font (text-6xl+). Labels in uppercase mono."
+    },
+    {
+      "name": "Footer",
+      "description": "Massive dark footer. Generous spacing (py-32). Big 'READY TO ORBIT?' heading and final CTA."
+    }
+  ],
+  "media": {
+    "hero_bg": {
+      "url": "https://images.unsplash.com/photo-1741997699658-d37ee7a2e010?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAxODF8MHwxfHNlYXJjaHwzfHxhYnN0cmFjdCUyMHNwYWNlJTIwb3JiaXR8ZW58MHx8fHwxNzgzNDE4NTg5fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Glowing planets in empty space. Use for hero overlay background."
+    },
+    "developer_coding": {
+      "url": "https://images.unsplash.com/photo-1562813733-b31f71025d54?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwxfHxkZXZlbG9wZXIlMjBjb2RpbmclMjBkYXJrfGVufDB8fHx8MTc4MzQxODU4OXww&ixlib=rb-4.1.0&q=85",
+      "description": "Developer coding in dark. Use inside Bento Grid as a visual."
+    },
+    "logos": {
+      "amazon": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
+      "uber": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Uber_logo_2018.png",
+      "adobe": "https://upload.wikimedia.org/wikipedia/commons/4/42/Adobe_Corporate_logo.svg"
+    },
+    "testimonials": [
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2ODl8MHwxfHNlYXJjaHwxfHx5b3VuZyUyMGRpdmVyc2UlMjBwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdHN8ZW58MHx8fHwxNzgzNDE4NTg5fDA&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1609371497456-3a55a205d5eb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2ODl8MHwxfHNlYXJjaHwzfHx5b3VuZyUyMGRpdmVyc2UlMjBwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdHN8ZW58MHx8fHwxNzgzNDE4NTg5fDA&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1760552069633-c05f246a5d8c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2ODl8MHwxfHNlYXJjaHw0fHx5b3VuZyUyMGRpdmVyc2UlMjBwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdHN8ZW58MHx8fHwxNzgzNDE4NTg5fDA&ixlib=rb-4.1.0&q=85"
+    ]
+  },
+  "instructions_to_main_agent": [
+    "MUST load Google Fonts: Unbounded (400,700,900), IBM Plex Sans (400,500), and JetBrains Mono (400).",
+    "MUST apply 'data-testid' to ALL interactive elements, buttons, and links.",
+    "Do NOT use typical purple/blue/teal gradients. Stick strictly to black, white, and zinc-900s, using Acid Green (#4ade80) ONLY for specific stark highlights.",
+    "Bento Grid implementation MUST use pure HTML/Tailwind classes, avoiding rigid components that break asymmetry.",
+    "Logos must be rendered white on the dark background using Tailwind 'brightness-0 invert' classes.",
+    "Ensure image overlays never hide text. Hero text must have contrast.",
+    "Code Orbit logo should just be styled text in the Unbounded font."
+  ]
+}
