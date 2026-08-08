@@ -473,6 +473,13 @@ const Voices = () => {
       image: "/profiles/kavya.png",
       link: "https://www.linkedin.com/in/kavya-mullachery-24522b259/",
     },
+    {
+      name: "Praneeth Varma",
+      quote:
+        "Cracking interviews in the US market felt impossible until I had the right preparation. The structured approach to problem-solving and consistent practice gave me the confidence to clear interviews abroad and land an offer I never thought I'd get.",
+      image: "/profiles/praneeth.png",
+      link: "https://www.linkedin.com/in/sai-praneeth-varma-kalidindi-b11427222/",
+    },
   ];
 
   const doubled = [...profiles, ...profiles, ...profiles, ...profiles];
@@ -497,15 +504,15 @@ const Voices = () => {
       </div>
 
       {/* Scrolling profiles */}
-      <div className="relative group">
+      <div className="relative group overflow-x-auto scrollbar-hide cursor-grab active:cursor-grabbing">
         <div
           data-testid="ed-voices-marquee"
-          className="flex gap-6 md:gap-8 w-max animate-marquee-slow"
+          className="flex gap-6 md:gap-8 w-max animate-marquee-slow group-hover:[animation-play-state:paused]"
         >
           {doubled.map((p, i) => (
             <figure
               key={i}
-              className="w-[300px] md:w-[360px] shrink-0 border border-black/20 bg-white/60 overflow-hidden flex flex-col"
+              className="w-[300px] md:w-[360px] shrink-0 border border-black/20 bg-white/60 overflow-hidden flex flex-col transition-transform duration-300 hover:-translate-y-3 hover:shadow-xl"
             >
               <div className="w-full h-[280px] md:h-[340px] overflow-hidden">
                 <img
@@ -542,6 +549,23 @@ const Voices = () => {
               </div>
             </figure>
           ))}
+          {/* End card */}
+          <figure className="w-[300px] md:w-[360px] shrink-0 border border-black/20 bg-white/60 overflow-hidden flex flex-col items-center justify-center min-h-[440px]">
+            <div className="text-center px-6">
+              <div
+                className="text-3xl md:text-4xl text-black mb-3"
+                style={{ fontFamily: "'Manrope', sans-serif", fontWeight: 800 }}
+              >
+                & many more...
+              </div>
+              <p
+                className="text-zinc-500 text-sm"
+                style={{ fontFamily: "'JetBrains Mono', monospace" }}
+              >
+                Join the next cohort
+              </p>
+            </div>
+          </figure>
         </div>
 
         {/* Fade edges */}
