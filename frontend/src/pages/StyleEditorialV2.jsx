@@ -104,6 +104,62 @@ const Hero = () => (
           </div>
         </div>
       </div>
+
+      <div className="mt-16 grid grid-cols-12 gap-6">
+        <div className="col-span-12 md:col-span-5 rounded-xl overflow-hidden" style={{ background: "linear-gradient(135deg, #0f766e 0%, #115e59 100%)" }}>
+          <div className="p-7 flex flex-col h-full">
+            <div className="flex items-center justify-between mb-4">
+              <span className="bg-white/20 text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-full" style={{ fontFamily: "'JetBrains Mono', monospace" }}>Free Workshop</span>
+              <span className="text-white/70 text-[11px] font-semibold" style={{ fontFamily: "'JetBrains Mono', monospace" }}>Aug 20</span>
+            </div>
+            <h3 className="text-white text-[28px] font-extrabold leading-tight mb-3" style={{ fontFamily: "'Manrope', sans-serif" }}>
+              DSA Workshop
+            </h3>
+            <p className="text-white/80 text-[13px] leading-relaxed mb-5" style={{ fontFamily: "'Manrope', sans-serif" }}>
+              Clear all your doubts. Understand what the course covers. Get a complete roadmap for cracking interviews at product-based companies.
+            </p>
+            <div className="flex flex-wrap gap-2 mb-5">
+              {["Live Q&A", "Career Guidance", "Course Walkthrough"].map((t) => (
+                <span key={t} className="bg-white/15 text-white text-[11px] font-medium px-3 py-1.5 rounded-full">{t}</span>
+              ))}
+            </div>
+            <div className="mt-auto pt-4 border-t border-white/20 flex items-center justify-between">
+              <span className="text-white/90 text-[12px] font-semibold" style={{ fontFamily: "'JetBrains Mono', monospace" }}>📞 +91 8951865075</span>
+              <a
+                href="https://wa.me/918951865075?text=Hi%20CodeOrbit!%20I%20want%20to%20register%20for%20the%20free%20DSA%20workshop."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white text-[#0f766e] text-[11px] font-bold uppercase tracking-wider px-4 py-2 rounded-full hover:bg-yellow-300 transition-colors"
+                style={{ fontFamily: "'JetBrains Mono', monospace" }}
+              >
+                Register →
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="col-span-12 md:col-span-7 rounded-xl overflow-hidden border border-black/10" style={{ background: "#fff" }}>
+          <div className="p-7">
+            <p className="text-[11px] font-bold uppercase tracking-widest text-[#c2410c] mb-3" style={{ fontFamily: "'JetBrains Mono', monospace" }}>What you'll get</p>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+              <div>
+                <div className="text-2xl mb-2">💬</div>
+                <h4 className="text-black text-[15px] font-bold mb-1" style={{ fontFamily: "'Manrope', sans-serif" }}>Live Doubt Clearing</h4>
+                <p className="text-zinc-600 text-[12px] leading-relaxed">Ask anything about DSA, programming, or career paths. No question too basic or advanced.</p>
+              </div>
+              <div>
+                <div className="text-2xl mb-2">📋</div>
+                <h4 className="text-black text-[15px] font-bold mb-1" style={{ fontFamily: "'Manrope', sans-serif" }}>Course Walkthrough</h4>
+                <p className="text-zinc-600 text-[12px] leading-relaxed">400+ problems, mock interviews, resume building & placement support — all explained.</p>
+              </div>
+              <div>
+                <div className="text-2xl mb-2">🚀</div>
+                <h4 className="text-black text-[15px] font-bold mb-1" style={{ fontFamily: "'Manrope', sans-serif" }}>Career Guidance</h4>
+                <p className="text-zinc-600 text-[12px] leading-relaxed">Plan your prep timeline and get insider tips from engineers who've cracked it.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 );
@@ -594,33 +650,69 @@ const CTA = () => (
     style={{ backgroundColor: "#f7f3ea" }}
   >
     <div className="max-w-6xl mx-auto px-6 md:px-10">
-      <h2
-        className="text-5xl sm:text-7xl md:text-[120px] leading-[0.9] tracking-[-0.02em] text-black mb-10"
-        style={{ fontFamily: "'Manrope', sans-serif", fontWeight: 800 }}
-      >
-        Write to us.
-        <br />
-        <span className="highlight-mark" style={{ fontFamily: "'Manrope', sans-serif" }}>
-          Or don&apos;t.
-        </span>
-      </h2>
-      <p className="text-zinc-700 text-lg max-w-lg leading-relaxed mb-10">
-        A 30-minute conversation with a mentor. No pitch. No pressure. Just an
-        honest look at whether we&apos;re the right fit for you.
-      </p>
-      <div className="flex flex-col sm:flex-row items-start gap-3">
-        <a
-          href={waLink(bookMsg)}
-          target="_blank"
-          rel="noopener noreferrer"
-          data-testid="ed-cta-primary"
-          className="group inline-flex items-center gap-3 bg-black text-white px-8 py-4 hover:bg-[#c2410c] transition-colors"
-          style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 11, letterSpacing: "0.18em", textTransform: "uppercase" }}
-        >
-          <MessageCircle className="w-4 h-4" />
-          Book a free demo
-          <ArrowUpRight className="w-4 h-4 transition-transform group-hover:rotate-45" />
-        </a>
+      <div className="grid grid-cols-12 gap-8 items-start">
+        <div className="col-span-12 md:col-span-7">
+          <h2
+            className="text-5xl sm:text-7xl md:text-[120px] leading-[0.9] tracking-[-0.02em] text-black mb-10"
+            style={{ fontFamily: "'Manrope', sans-serif", fontWeight: 800 }}
+          >
+            Write to us.
+            <br />
+            <span className="highlight-mark" style={{ fontFamily: "'Manrope', sans-serif" }}>
+              Or don&apos;t.
+            </span>
+          </h2>
+          <p className="text-zinc-700 text-lg max-w-lg leading-relaxed mb-10">
+            A 30-minute conversation with a mentor. No pitch. No pressure. Just an
+            honest look at whether we&apos;re the right fit for you.
+          </p>
+          <div className="flex flex-col sm:flex-row items-start gap-3">
+            <a
+              href={waLink(bookMsg)}
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="ed-cta-primary"
+              className="group inline-flex items-center gap-3 bg-black text-white px-8 py-4 hover:bg-[#c2410c] transition-colors"
+              style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 11, letterSpacing: "0.18em", textTransform: "uppercase" }}
+            >
+              <MessageCircle className="w-4 h-4" />
+              Book a free demo
+              <ArrowUpRight className="w-4 h-4 transition-transform group-hover:rotate-45" />
+            </a>
+          </div>
+        </div>
+
+        {/* Workshop Card */}
+        <div className="col-span-12 md:col-span-5 rounded-xl overflow-hidden" style={{ background: "linear-gradient(135deg, #0f766e 0%, #115e59 100%)" }}>
+          <div className="p-7 flex flex-col">
+            <div className="flex items-center justify-between mb-3">
+              <span className="bg-white/20 text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-full" style={{ fontFamily: "'JetBrains Mono', monospace" }}>🎯 Free Workshop</span>
+            </div>
+            <h3 className="text-white text-[28px] font-extrabold leading-tight mb-3" style={{ fontFamily: "'Manrope', sans-serif" }}>
+              DSA Workshop
+            </h3>
+            <p className="text-white/80 text-[13px] leading-relaxed mb-5" style={{ fontFamily: "'Manrope', sans-serif" }}>
+              Clear all your doubts. Understand what the course covers. Get a complete roadmap for cracking interviews at product-based companies.
+            </p>
+            <div className="flex flex-wrap gap-2 mb-5">
+              {["Live Q&A", "Career Guidance", "Course Walkthrough"].map((t) => (
+                <span key={t} className="bg-white/15 text-white text-[11px] font-medium px-3 py-1.5 rounded-full">{t}</span>
+              ))}
+            </div>
+            <div className="mt-auto pt-4 border-t border-white/20 flex items-center justify-between">
+              <span className="text-white/90 text-[12px] font-semibold" style={{ fontFamily: "'JetBrains Mono', monospace" }}>📞 +91 8951865075</span>
+              <a
+                href="https://wa.me/918951865075?text=Hi%20CodeOrbit!%20I%20want%20to%20register%20for%20the%20free%20DSA%20workshop."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white text-[#0f766e] text-[11px] font-bold uppercase tracking-wider px-4 py-2 rounded-full hover:bg-yellow-300 transition-colors"
+                style={{ fontFamily: "'JetBrains Mono', monospace" }}
+              >
+                Register →
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
