@@ -550,7 +550,7 @@ const Voices = () => {
       quote:
         "I used to freeze during coding rounds — not because I didn't know the concepts, but because I'd never practised under pressure. The weekly mocks here changed that completely. By the time real interviews came, I felt calm and prepared.",
       image: "/profiles/kavya.png",
-      link: "https://www.linkedin.com/in/kavya-mullachery-24522b259/",
+      link: "https://www.linkedin.com/in/kavya-mullachery-21aaa31b9/",
     },
     {
       name: "Praneeth Varma",
