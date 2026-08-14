@@ -587,14 +587,14 @@ const Voices = () => {
       name: "Kavya Mullacherry",
       quote:
         "I used to freeze during coding rounds, not because I didn't know the concepts, but because I'd never practised under pressure. The weekly mocks here changed that completely. By the time real interviews came, I felt calm and prepared.",
-      image: "/profiles/kavya.png",
+      image: "/profiles/kavya.jpeg",
       link: "https://www.linkedin.com/in/kavya-mullachery-21aaa31b9/",
     },
     {
       name: "Praneeth Varma",
       quote:
         "Cracking interviews in the US market felt impossible until I had the right preparation. The structured approach to problem-solving and consistent practice gave me the confidence to clear interviews abroad and land an offer I never thought I'd get.",
-      image: "/profiles/praneeth.png",
+      image: "/profiles/praneeth.jpeg",
       link: "https://www.linkedin.com/in/sai-praneeth-varma-kalidindi-b11427222/",
     },
     {
