@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { ArrowUpRight, MessageCircle } from "lucide-react";
 
 const WHATSAPP_NUMBER = "918951865075"; // CodeOrbit WhatsApp
@@ -495,6 +495,44 @@ const Beyond = () => (
 
 /* -------------------------- VOICES / ALUMNI ------------------------- */
 const Voices = () => {
+  const marqueeRef = useRef(null);
+
+  useEffect(() => {
+    const el = marqueeRef.current;
+    if (!el) return;
+    let raf;
+    let paused = false;
+    const speed = 0.5; // px per frame
+    const pause = () => {
+      paused = true;
+    };
+    const resume = () => {
+      paused = false;
+    };
+    el.addEventListener("mouseenter", pause);
+    el.addEventListener("mouseleave", resume);
+    el.addEventListener("touchstart", pause);
+    el.addEventListener("touchend", resume);
+    const step = () => {
+      const half = el.scrollWidth / 2;
+      if (!paused && half > 0) {
+        el.scrollLeft += speed;
+        if (el.scrollLeft >= half) {
+          el.scrollLeft -= half;
+        }
+      }
+      raf = requestAnimationFrame(step);
+    };
+    raf = requestAnimationFrame(step);
+    return () => {
+      cancelAnimationFrame(raf);
+      el.removeEventListener("mouseenter", pause);
+      el.removeEventListener("mouseleave", resume);
+      el.removeEventListener("touchstart", pause);
+      el.removeEventListener("touchend", resume);
+    };
+  }, []);
+
   const profiles = [
     {
       name: "Vishnu",
@@ -595,10 +633,11 @@ const Voices = () => {
       </div>
 
       {/* Scrolling profiles */}
-      <div className="relative group overflow-hidden">
+      <div className="relative">
         <div
+          ref={marqueeRef}
           data-testid="ed-voices-marquee"
-          className="flex w-max animate-marquee-slow group-hover:[animation-play-state:paused]"
+          className="flex w-full overflow-x-auto scrollbar-hide cursor-grab active:cursor-grabbing"
         >
           {[0, 1].flatMap((setIdx) => [
             ...profiles.map((p, i) => (
