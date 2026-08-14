@@ -575,8 +575,6 @@ const Voices = () => {
     },
   ];
 
-  const doubled = [...profiles, ...profiles, ...profiles, ...profiles];
-
   return (
     <section
       id="voices"
@@ -597,68 +595,73 @@ const Voices = () => {
       </div>
 
       {/* Scrolling profiles */}
-      <div className="relative group overflow-x-auto scrollbar-hide cursor-grab active:cursor-grabbing">
+      <div className="relative group overflow-hidden">
         <div
           data-testid="ed-voices-marquee"
-          className="flex gap-6 md:gap-8 w-max animate-marquee-slow group-hover:[animation-play-state:paused]"
+          className="flex w-max animate-marquee-slow group-hover:[animation-play-state:paused]"
         >
-          {doubled.map((p, i) => (
+          {[0, 1].flatMap((setIdx) => [
+            ...profiles.map((p, i) => (
+              <figure
+                key={`${setIdx}-${i}`}
+                className="w-[300px] md:w-[360px] shrink-0 mr-6 md:mr-8 border border-black/20 bg-white/60 overflow-hidden flex flex-col transition-transform duration-300 hover:-translate-y-3 hover:shadow-xl"
+              >
+                <div className="w-full h-[280px] md:h-[340px] overflow-hidden">
+                  <img
+                    src={p.image}
+                    alt={p.name}
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+                <div className="p-6 md:p-7 flex flex-col flex-1">
+                  <blockquote
+                    className="text-black text-[15px] leading-[1.55] mb-5 flex-1"
+                    style={{ fontFamily: "'Manrope', sans-serif" }}
+                  >
+                    &ldquo;{p.quote}&rdquo;
+                  </blockquote>
+                  <figcaption className="pt-4 border-t border-black/20 flex items-center justify-between">
+                    <span
+                      className="text-[11px] tracking-[0.2em] uppercase text-black"
+                      style={{ fontFamily: "'JetBrains Mono', monospace" }}
+                    >
+                      {p.name}
+                    </span>
+                    <a
+                      href={p.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-[11px] tracking-[0.2em] uppercase text-black hover:text-[#c2410c] transition-colors"
+                      style={{ fontFamily: "'JetBrains Mono', monospace" }}
+                    >
+                      LinkedIn
+                      <ArrowUpRight className="w-3.5 h-3.5" />
+                    </a>
+                  </figcaption>
+                </div>
+              </figure>
+            )),
+            /* End card */
             <figure
-              key={i}
-              className="w-[300px] md:w-[360px] shrink-0 border border-black/20 bg-white/60 overflow-hidden flex flex-col transition-transform duration-300 hover:-translate-y-3 hover:shadow-xl"
+              key={`${setIdx}-more`}
+              className="w-[300px] md:w-[360px] shrink-0 mr-6 md:mr-8 border border-black/20 bg-white/60 overflow-hidden flex flex-col items-center justify-center min-h-[440px]"
             >
-              <div className="w-full h-[280px] md:h-[340px] overflow-hidden">
-                <img
-                  src={p.image}
-                  alt={p.name}
-                  className="w-full h-full object-cover object-top"
-                />
-              </div>
-              <div className="p-6 md:p-7 flex flex-col flex-1">
-                <blockquote
-                  className="text-black text-[15px] leading-[1.55] mb-5 flex-1"
-                  style={{ fontFamily: "'Manrope', sans-serif" }}
+              <div className="text-center px-6">
+                <div
+                  className="text-3xl md:text-4xl text-black mb-3"
+                  style={{ fontFamily: "'Manrope', sans-serif", fontWeight: 800 }}
                 >
-                  &ldquo;{p.quote}&rdquo;
-                </blockquote>
-                <figcaption className="pt-4 border-t border-black/20 flex items-center justify-between">
-                  <span
-                    className="text-[11px] tracking-[0.2em] uppercase text-black"
-                    style={{ fontFamily: "'JetBrains Mono', monospace" }}
-                  >
-                    {p.name}
-                  </span>
-                  <a
-                    href={p.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 text-[11px] tracking-[0.2em] uppercase text-black hover:text-[#c2410c] transition-colors"
-                    style={{ fontFamily: "'JetBrains Mono', monospace" }}
-                  >
-                    LinkedIn
-                    <ArrowUpRight className="w-3.5 h-3.5" />
-                  </a>
-                </figcaption>
+                  & many more...
+                </div>
+                <p
+                  className="text-zinc-500 text-sm"
+                  style={{ fontFamily: "'JetBrains Mono', monospace" }}
+                >
+                  Join the next cohort
+                </p>
               </div>
-            </figure>
-          ))}
-          {/* End card */}
-          <figure className="w-[300px] md:w-[360px] shrink-0 border border-black/20 bg-white/60 overflow-hidden flex flex-col items-center justify-center min-h-[440px]">
-            <div className="text-center px-6">
-              <div
-                className="text-3xl md:text-4xl text-black mb-3"
-                style={{ fontFamily: "'Manrope', sans-serif", fontWeight: 800 }}
-              >
-                & many more...
-              </div>
-              <p
-                className="text-zinc-500 text-sm"
-                style={{ fontFamily: "'JetBrains Mono', monospace" }}
-              >
-                Join the next cohort
-              </p>
-            </div>
-          </figure>
+            </figure>,
+          ])}
         </div>
 
         {/* Fade edges */}
