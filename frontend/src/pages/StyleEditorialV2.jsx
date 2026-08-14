@@ -127,7 +127,7 @@ const Hero = () => (
           <div className="p-7 flex flex-col h-full">
             <div className="flex items-center justify-between mb-4">
               <span className="bg-white/20 text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-full" style={{ fontFamily: "'JetBrains Mono', monospace" }}>Free Workshop</span>
-              <span className="text-white/70 text-[11px] font-semibold" style={{ fontFamily: "'JetBrains Mono', monospace" }}>Aug 20</span>
+              <span className="text-white/70 text-[11px] font-semibold" style={{ fontFamily: "'JetBrains Mono', monospace" }}>Aug 29</span>
             </div>
             <h3 className="text-white text-[28px] font-extrabold leading-tight mb-3" style={{ fontFamily: "'Manrope', sans-serif" }}>
               DSA Workshop
@@ -780,9 +780,10 @@ const CTA = () => (
 
         {/* Workshop Card */}
         <div className="col-span-12 md:col-span-5 rounded-xl overflow-hidden" style={{ background: "linear-gradient(135deg, #0f766e 0%, #115e59 100%)" }}>
-          <div className="p-7 flex flex-col">
-            <div className="flex items-center justify-between mb-3">
-              <span className="bg-white/20 text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-full" style={{ fontFamily: "'JetBrains Mono', monospace" }}>🎯 Free Workshop</span>
+          <div className="p-7 flex flex-col h-full">
+            <div className="flex items-center justify-between mb-4">
+              <span className="bg-white/20 text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-full" style={{ fontFamily: "'JetBrains Mono', monospace" }}>Free Workshop</span>
+              <span className="text-white/70 text-[11px] font-semibold" style={{ fontFamily: "'JetBrains Mono', monospace" }}>Aug 29</span>
             </div>
             <h3 className="text-white text-[28px] font-extrabold leading-tight mb-3" style={{ fontFamily: "'Manrope', sans-serif" }}>
               DSA Workshop
