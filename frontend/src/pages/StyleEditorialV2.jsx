@@ -566,6 +566,13 @@ const Voices = () => {
       image: "/profiles/akash.jpeg",
       link: "https://www.linkedin.com/in/akash-babu-thottempudi-26603b1b0/",
     },
+    {
+      name: "Teja",
+      quote:
+        "I always doubted whether I could crack tough interviews. Consistent practice and honest feedback from mentors slowly built my confidence, and it showed when it mattered most. Getting placed felt like proof that the effort was worth it.",
+      image: "/profiles/teja.jpeg",
+      link: "https://www.linkedin.com/in/thummala-charanteja/",
+    },
   ];
 
   const doubled = [...profiles, ...profiles, ...profiles, ...profiles];
