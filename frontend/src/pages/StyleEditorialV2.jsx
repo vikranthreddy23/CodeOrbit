@@ -499,7 +499,7 @@ const Voices = () => {
     {
       name: "Vishnu",
       quote:
-        "Learning DSA helped me land a job in the USA — even in a tough market where most people were struggling to get callbacks.",
+        "Learning DSA helped me land a job in the USA, even in a tough market where most people were struggling to get callbacks.",
       image: "/profiles/vishnu.jpeg",
       link: "https://www.linkedin.com/in/vishnu-sai-reddy-3a9b5a243/",
     },
@@ -520,14 +520,14 @@ const Voices = () => {
     {
       name: "Manish Varma",
       quote:
-        "I came from an electronics background with zero coding experience. This course took me from writing my first line of code to solving advanced problems — and ultimately helped me switch domains entirely. Now I'm working as an SDE at a product-based company.",
+        "I came from an electronics background with zero coding experience. This course took me from writing my first line of code to solving advanced problems, and it ultimately helped me switch domains entirely. Now I'm working as an SDE at a product-based company.",
       image: "/profiles/manish.jpeg",
       link: "https://www.linkedin.com/in/manish-varma-denamkonda-4ab120220/",
     },
     {
       name: "Poojitha",
       quote:
-        "I had no structured approach to problem-solving before this. The step-by-step mentoring gave me clarity and confidence — I went from struggling with basic arrays to clearing multiple on-campus interviews back to back.",
+        "I had no structured approach to problem-solving before this. The step-by-step mentoring gave me clarity and confidence. I went from struggling with basic arrays to clearing multiple on-campus interviews back to back.",
       image: "/profiles/poojitha.jpeg",
       link: "https://www.linkedin.com/in/k-poojitha-reddy-311155266/",
     },
@@ -541,14 +541,14 @@ const Voices = () => {
     {
       name: "Gopichand",
       quote:
-        "The role I was targeting demanded deep DSA knowledge — there was no shortcut. This course built that foundation solid enough that I cleared rounds where strong problem-solving was non-negotiable. Ended up switching with a 70% hike.",
+        "The role I was targeting demanded deep DSA knowledge and there was no shortcut. This course built that foundation solid enough that I cleared rounds where strong problem-solving was non-negotiable. Ended up switching with a 70% hike.",
       image: "/profiles/gopichand.jpeg",
       link: "https://www.linkedin.com/in/gopichand-reddy-pothireddy-a50949233/",
     },
     {
       name: "Kavya Mullacherry",
       quote:
-        "I used to freeze during coding rounds — not because I didn't know the concepts, but because I'd never practised under pressure. The weekly mocks here changed that completely. By the time real interviews came, I felt calm and prepared.",
+        "I used to freeze during coding rounds, not because I didn't know the concepts, but because I'd never practised under pressure. The weekly mocks here changed that completely. By the time real interviews came, I felt calm and prepared.",
       image: "/profiles/kavya.png",
       link: "https://www.linkedin.com/in/kavya-mullachery-21aaa31b9/",
     },
@@ -562,7 +562,7 @@ const Voices = () => {
     {
       name: "Akash",
       quote:
-        "I was inconsistent with my prep for months — starting and stopping without direction. This program gave me a clear path, weekly accountability, and mentors who actually cared. That structure made all the difference.",
+        "I was inconsistent with my prep for months, starting and stopping without direction. This program gave me a clear path, weekly accountability, and mentors who actually cared. That structure made all the difference.",
       image: "/profiles/akash.jpeg",
       link: "https://www.linkedin.com/in/akash-babu-thottempudi-26603b1b0/",
     },
