@@ -724,12 +724,12 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Navigate to="/editorial-v2" replace />} />
+          <Route path="/" element={<StyleEditorialV2 />} />
           <Route path="/orbit" element={<Home />} />
           <Route path="/editorial" element={<StyleEditorial />} />
           <Route path="/editorial-v2" element={<StyleEditorialV2 />} />
           <Route path="/bold" element={<StyleBold />} />
-          <Route path="*" element={<Navigate to="/editorial-v2" replace />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </BrowserRouter>
     </div>
