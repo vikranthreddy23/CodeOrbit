@@ -140,23 +140,28 @@ const Hero = () => (
                 <span key={t} className="bg-white/15 text-white text-[11px] font-medium px-3 py-1.5 rounded-full">{t}</span>
               ))}
             </div>
-            <div className="mt-auto pt-4 border-t border-white/20 flex items-center gap-2">
-              <a
-                href="https://wa.me/918951865075?text=Hi%2C%20I%20want%20to%20register%20for%20the%20free%20DSA%20workshop."
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex-1 text-center bg-white text-[#0f766e] text-[11px] font-bold uppercase tracking-wider px-3 py-2.5 rounded-full hover:bg-green-100 transition-colors"
-                style={{ fontFamily: "'JetBrains Mono', monospace" }}
-              >
-                💬 WhatsApp
-              </a>
-              <a
-                href="mailto:contactcodeorbit@gmail.com?subject=Register%20for%20DSA%20Workshop&body=Hi%2C%20I%20want%20to%20register%20for%20the%20free%20DSA%20workshop."
-                className="flex-1 text-center bg-white text-[#0f766e] text-[11px] font-bold uppercase tracking-wider px-3 py-2.5 rounded-full hover:bg-orange-100 transition-colors"
-                style={{ fontFamily: "'JetBrains Mono', monospace" }}
-              >
-                ✉️ Email
-              </a>
+            <div className="mt-auto pt-4 border-t border-white/20">
+              <p className="text-white/60 text-[10px] font-semibold uppercase tracking-widest mb-2.5" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+                Click to register
+              </p>
+              <div className="flex items-center gap-2">
+                <a
+                  href="https://wa.me/918951865075?text=Hi%2C%20I%20want%20to%20register%20for%20the%20free%20DSA%20workshop."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 text-center bg-white text-[#0f766e] text-[11px] font-bold uppercase tracking-wider px-3 py-2.5 rounded-full hover:bg-green-100 transition-colors"
+                  style={{ fontFamily: "'JetBrains Mono', monospace" }}
+                >
+                  💬 WhatsApp
+                </a>
+                <a
+                  href="mailto:contactcodeorbit@gmail.com?subject=Register%20for%20DSA%20Workshop&body=Hi%2C%20I%20want%20to%20register%20for%20the%20free%20DSA%20workshop."
+                  className="flex-1 text-center bg-white text-[#0f766e] text-[11px] font-bold uppercase tracking-wider px-3 py-2.5 rounded-full hover:bg-orange-100 transition-colors"
+                  style={{ fontFamily: "'JetBrains Mono', monospace" }}
+                >
+                  ✉️ Email
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -796,23 +801,28 @@ const CTA = () => (
                 <span key={t} className="bg-white/15 text-white text-[11px] font-medium px-3 py-1.5 rounded-full">{t}</span>
               ))}
             </div>
-            <div className="mt-auto pt-4 border-t border-white/20 flex items-center gap-2">
-              <a
-                href="https://wa.me/918951865075?text=Hi%2C%20I%20want%20to%20register%20for%20the%20free%20DSA%20workshop."
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex-1 text-center bg-white text-[#0f766e] text-[11px] font-bold uppercase tracking-wider px-3 py-2.5 rounded-full hover:bg-green-100 transition-colors"
-                style={{ fontFamily: "'JetBrains Mono', monospace" }}
-              >
-                💬 WhatsApp
-              </a>
-              <a
-                href="mailto:contactcodeorbit@gmail.com?subject=Register%20for%20DSA%20Workshop&body=Hi%2C%20I%20want%20to%20register%20for%20the%20free%20DSA%20workshop."
-                className="flex-1 text-center bg-white text-[#0f766e] text-[11px] font-bold uppercase tracking-wider px-3 py-2.5 rounded-full hover:bg-orange-100 transition-colors"
-                style={{ fontFamily: "'JetBrains Mono', monospace" }}
-              >
-                ✉️ Email
-              </a>
+            <div className="mt-auto pt-4 border-t border-white/20">
+              <p className="text-white/60 text-[10px] font-semibold uppercase tracking-widest mb-2.5" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+                Click to register
+              </p>
+              <div className="flex items-center gap-2">
+                <a
+                  href="https://wa.me/918951865075?text=Hi%2C%20I%20want%20to%20register%20for%20the%20free%20DSA%20workshop."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 text-center bg-white text-[#0f766e] text-[11px] font-bold uppercase tracking-wider px-3 py-2.5 rounded-full hover:bg-green-100 transition-colors"
+                  style={{ fontFamily: "'JetBrains Mono', monospace" }}
+                >
+                  💬 WhatsApp
+                </a>
+                <a
+                  href="mailto:contactcodeorbit@gmail.com?subject=Register%20for%20DSA%20Workshop&body=Hi%2C%20I%20want%20to%20register%20for%20the%20free%20DSA%20workshop."
+                  className="flex-1 text-center bg-white text-[#0f766e] text-[11px] font-bold uppercase tracking-wider px-3 py-2.5 rounded-full hover:bg-orange-100 transition-colors"
+                  style={{ fontFamily: "'JetBrains Mono', monospace" }}
+                >
+                  ✉️ Email
+                </a>
+              </div>
             </div>
           </div>
         </div>
