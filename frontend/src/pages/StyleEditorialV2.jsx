@@ -616,6 +616,13 @@ const Voices = () => {
       image: "/profiles/teja.jpeg",
       link: "https://www.linkedin.com/in/thummala-charanteja/",
     },
+    {
+      name: "Sathwik",
+      quote:
+        "Before this, I didn't even know where to start with DSA. Having a proper curriculum instead of random YouTube videos made the biggest difference. Things finally started clicking once I had a clear order to follow.",
+      image: "/profiles/sathwik.jpeg",
+      link: "https://www.linkedin.com/in/boggarapu-siva-lalith-sathwik-46b4181ab/",
+    },
   ];
 
   return (
