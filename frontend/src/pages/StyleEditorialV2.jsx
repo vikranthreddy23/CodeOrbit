@@ -623,6 +623,13 @@ const Voices = () => {
       image: "/profiles/sathwik.jpeg",
       link: "https://www.linkedin.com/in/boggarapu-siva-lalith-sathwik-46b4181ab/",
     },
+    {
+      name: "Deekshita",
+      quote:
+        "After graduation I didn't have a job and struggled to stay consistent with coding on my own. The daily structure and accountability here kept me going, and it paid off. I'm now placed at Cisco as a Software Engineer.",
+      image: "/profiles/deekshita.jpeg",
+      link: "https://www.linkedin.com/in/birudala-deekshitha-reddy-24225a1a6/",
+    },
   ];
 
   return (
