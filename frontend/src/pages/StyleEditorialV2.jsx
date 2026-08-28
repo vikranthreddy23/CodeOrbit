@@ -5,7 +5,7 @@ const WHATSAPP_NUMBER = "918951865075"; // CodeOrbit WhatsApp
 const waLink = (msg) =>
   `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`;
 
-const bookMsg = "Hi, I would like to learn more about CodeOrbit.";
+const bookMsg = "Hi CodeOrbit, I'd like to enroll in the next DSA batch. Please share the details.";
 
 /* ---------------------------------- NAV ---------------------------------- */
 const Nav = () => (
@@ -45,7 +45,7 @@ const Nav = () => (
         className="text-[11px] tracking-[0.15em] uppercase border-b-2 border-black pb-0.5 hover:text-[#c2410c] hover:border-[#c2410c] transition-colors"
         style={{ fontFamily: "'JetBrains Mono', monospace" }}
       >
-        Book demo →
+        Enroll in the next batch →
       </a>
     </div>
   </header>
@@ -88,7 +88,7 @@ const Hero = () => (
                 className="w-full group inline-flex items-center justify-between bg-black text-white px-6 py-4 hover:bg-[#c2410c] transition-colors cursor-pointer"
                 style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 11, letterSpacing: "0.18em", textTransform: "uppercase" }}
               >
-                Book a free demo
+                Enroll in the next batch
                 <ArrowUpRight className="w-4 h-4 transition-transform group-hover:rotate-45" />
               </button>
               <div className="hidden group-hover/demo:flex flex-col absolute top-full left-0 w-full z-20 border border-black/15 shadow-lg">
@@ -102,7 +102,7 @@ const Hero = () => (
                   💬 WhatsApp
                 </a>
                 <a
-                  href="mailto:contactcodeorbit@gmail.com?subject=Book%20a%20Demo%20-%20CodeOrbit&body=Hi%2C%20I%20would%20like%20to%20book%20a%20free%20demo%20for%20the%20DSA%20mentoring%20program."
+                  href="mailto:contactcodeorbit@gmail.com?subject=Enroll%20in%20the%20next%20DSA%20batch%20-%20CodeOrbit&body=Hi%20CodeOrbit%2C%20I'd%20like%20to%20enroll%20in%20the%20next%20DSA%20batch.%20Please%20share%20the%20details."
                   className="flex items-center gap-3 bg-white px-6 py-3.5 hover:bg-orange-50 transition-colors"
                   style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 11, letterSpacing: "0.15em", textTransform: "uppercase" }}
                 >
@@ -760,7 +760,7 @@ const CTA = () => (
                 style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 11, letterSpacing: "0.18em", textTransform: "uppercase" }}
               >
                 <MessageCircle className="w-4 h-4" />
-                Book a free demo
+                Enroll in the next batch
                 <ArrowUpRight className="w-4 h-4 transition-transform group-hover:rotate-45" />
               </button>
               <div className="hidden group-hover/demo:flex flex-col absolute top-full left-0 w-full z-20 border border-black/15 shadow-lg">
@@ -774,7 +774,7 @@ const CTA = () => (
                   💬 WhatsApp
                 </a>
                 <a
-                  href="mailto:contactcodeorbit@gmail.com?subject=Book%20a%20Demo%20-%20CodeOrbit&body=Hi%2C%20I%20would%20like%20to%20book%20a%20free%20demo%20for%20the%20DSA%20mentoring%20program."
+                  href="mailto:contactcodeorbit@gmail.com?subject=Enroll%20in%20the%20next%20DSA%20batch%20-%20CodeOrbit&body=Hi%20CodeOrbit%2C%20I'd%20like%20to%20enroll%20in%20the%20next%20DSA%20batch.%20Please%20share%20the%20details."
                   className="flex items-center gap-3 bg-white px-6 py-3.5 hover:bg-orange-50 transition-colors"
                   style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 11, letterSpacing: "0.15em", textTransform: "uppercase" }}
                 >
