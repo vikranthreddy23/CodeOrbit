@@ -74,6 +74,12 @@ const Hero = () => (
           </h1>
         </div>
         <div className="col-span-12 md:col-span-4 md:pb-4">
+          <div className="inline-flex items-center gap-2 mb-4 border border-[#c2410c]/30 bg-[#c2410c]/5 px-3 py-1.5 rounded-full">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#c2410c] animate-pulse" />
+            <span className="text-[11px] font-bold uppercase tracking-[0.15em] text-[#c2410c]" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+              Next batch starts Sep 1
+            </span>
+          </div>
           <p className="text-zinc-700 text-[15px] leading-relaxed max-w-sm">
             A slow, deliberate DSA mentoring program taught by senior engineers
             from <span className="italic text-black">Amazon</span>,{" "}
