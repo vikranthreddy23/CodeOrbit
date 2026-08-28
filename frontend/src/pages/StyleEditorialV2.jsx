@@ -74,7 +74,7 @@ const Hero = () => (
           </h1>
         </div>
         <div className="col-span-12 md:col-span-4 md:pb-4">
-          <div className="inline-flex items-center gap-3 -mt-6 mb-8 border-2 border-[#c2410c]/50 bg-[#c2410c]/8 px-7 py-4 rounded-full whitespace-nowrap">
+          <div className="inline-flex items-center gap-3 mt-4 mb-8 border-2 border-[#c2410c]/50 bg-[#c2410c]/8 px-7 py-4 rounded-full whitespace-nowrap">
             <span className="w-3 h-3 rounded-full bg-[#c2410c] animate-pulse shrink-0" />
             <span className="text-[18px] font-bold uppercase tracking-[0.1em] text-[#c2410c] whitespace-nowrap" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
               Next batch starts Sep 1
