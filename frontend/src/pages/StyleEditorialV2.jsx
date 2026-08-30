@@ -77,7 +77,7 @@ const Hero = () => (
           <div className="inline-flex items-center gap-3 mt-4 mb-8 border-2 border-[#c2410c]/50 bg-[#c2410c]/8 px-7 py-4 rounded-full whitespace-nowrap">
             <span className="w-3 h-3 rounded-full bg-[#c2410c] animate-pulse shrink-0" />
             <span className="text-[18px] font-bold uppercase tracking-[0.1em] text-[#c2410c] whitespace-nowrap" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
-              Next batch starts Sep 1
+              Next batch starts Sep 3
             </span>
           </div>
           <p className="text-zinc-700 text-[15px] leading-relaxed max-w-sm">
